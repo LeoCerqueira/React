@@ -1,34 +1,35 @@
 {
-    "extends": [
-      "eslint:recommended", 
-      "plugin:import/errors",
-      "plugin:react/recommended",
-      "plugin:jsx-a11y/recommended",
+  "extends": [
+    "eslint:recommended",
+    "plugin:import/errors",
+    "plugin:react/recommended",
+    "plugin:jsx-a11y/recommended",
 
-      "prettier", 
-      "prettier/react"
-    ],
-    "rules":{
-      "reacr/prop-types": 0,
-      "no-console": 1
-
-    },
-    "plugins": ["react","import","jax-a11y"],
-    "parserOptions": {
-      "ecmaVersion": 2018,
-      "sourceType": "module",
-      "ecmaFeatures": {
-        "jsx": true
-      }
-    },
-    "env": {
-      "es6": true,
-      "browser": true,
-      "node": true
-    },
-    "settings":{
-      "react":{
-        "version":"detect"
-      }
+    "prettier",
+    "prettier/react"
+  ],
+  "rules": {
+    "reacr/prop-types": 0,
+    "no-console": 1,
+    "reac-hooks/rules-of-hooks": 2,
+    "reac-hooks/exhaustive-deps": 1
+  },
+  "plugins": ["react", "import", "jax-a11y", "react-hooks"],
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "env": {
+    "es6": true,
+    "browser": true,
+    "node": true
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
     }
   }
+}
